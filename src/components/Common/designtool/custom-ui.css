@@ -1,0 +1,48 @@
+.custom-layout {
+  position: absolute;
+  inset: 0px;
+  z-index: 300;
+  pointer-events: none;
+}
+
+.custom-toolbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 8px;
+}
+
+.custom-button {
+  pointer-events: all;
+  padding: 4px 12px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 64px;
+}
+
+.custom-button[data-isactive="true"] {
+  background-color: black;
+  color: white;
+}
+/*Custom Style*/
+.tl-background {
+  background-color: #fff;
+}
+
+.tlui-menu-zone,
+.tlui-layout__bottom,
+.tlui-style-panel__section,
+.tlui-slider__container {
+  display: none !important;
+}
+.tlui-style-panel__section__common:not(:only-child) {
+  border-bottom: 0px;
+}
+.tlui-style-panel__wrapper {
+  display: none;
+}
